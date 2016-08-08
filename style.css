@@ -1,0 +1,50 @@
+body {
+	padding-top: 60px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+.navbar-header img {
+	margin-top: -10px;
+	height: 40px;
+}
+
+/* Modal Dialogs */
+
+div.modal-dialog {
+	margin-top: 100px;
+	width: 450px;
+}
+
+div.modal-body {
+	margin: 20px 60px 60px 60px;
+}
+
+/* Jumbotron */
+
+div.jumbotron {
+	background-image: url("images/camping.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	height: 600px;
+	width: 100%;
+	color: #ffffff;
+}
+
+div.jumbotron-content {
+	margin-top: 100px;
+	margin-left: 10%;
+	width: 500px;
+}
+
+/* Carousel */
+#productcarousel img {
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}

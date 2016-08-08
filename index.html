@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EarthJunky</title>
+	<link href="https://bootswatch.com/sandstone/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.png"/>
+				</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarToCollapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		        </button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbarToCollapse" aria-expanded="false">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-header">General</li>
+							<li><a href="#">Camping</a></li>
+							<li><a href="#">Climbing</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Other</a></li>
+							<li class="dropdown-header">Clothing</li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Women</a></li>
+							<li><a href="#">Kids</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Clearance</a></li>
+						</ul>
+						<li><a href="#">Contact Us</a></li>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search..">
+					</div>
+					<button type="submit" class="btn btn-default">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#login">Log In</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div id="login" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">Log In</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input type="email" class="form-control" id="email"/>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password"/>
+							</div>
+							<button type="submit" class="btn btn-success btn-block">Log In</button>
+						</form>
+						<hr class="separator">
+						<a href="#">Forgot your password?</a>
+						<p data-html="true"><br>Don't have an account?<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup">&nbsp;Sign up here</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="signup" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">Sign Up</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name"/>
+							</div>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input type="email" class="form-control" id="email"/>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password"/>
+							</div>
+							<div class="form-group">
+								<label for="confirmpassword">Confirm Password</label>
+								<input type="password" class="form-control" id="confirmpassword"/>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" checked>I would like to receive the EarthJunky weekly newsletter
+								</label>
+							</div>
+							<button type="submit" class="btn btn-success btn-block">Create Account</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<div class="jumbotron-content">
+			<h1>All your outdoor needs.</h1>
+			<p>At EarthJunky, we provide everything you need to trek into the wilderness.</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="alert alert-dismissable alert-info">
+					<button type="button" class="close" data-dismiss="alert">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					Our Thanksgiving week sale is coming up! Receive up to <strong>40% off</strong> of various items, and <strong>10% off</strong> of your total order. Don't miss out on the deals!
+				</div>
+				<h2><strong>Trending Products</strong></h2>
+				<p>Check out our most popular items.
+					<button class="btn btn-default btn-sm" role="button">See more &raquo;</button>
+				</p>
+				<div class="panel panel-default">
+					<div id="productcarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+						<div class="carousel-inner">
+							<div class="item active">
+								<img class="img-responsive" src="images/products/tent.jpg" alt="Camping Tent"/>
+							</div>
+							<div class="item">
+								<img class="img-responsive" src="images/products/kayak.jpg" alt="Inflatable Kayak"/>
+							</div>
+							<div class="item">
+								<img class="img-responsive" src="images/products/backpack.png" alt="Hiking Backpack"/>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#productcarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#productcarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+				<hr class="separator">
+				<h2><strong>What are customers saying about EarthJunky?</strong></h2>
+				<p>More and more people are getting their gear from EarthJunky.
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<blockquote>
+							<p>"I am an avid hiker. I have hiked the Appalachian trail multiple times. Whenever I am about to go on a long hiking trip, EarthJunky is always my number one choice. They sell reliably brands at an affordable price."</p>
+							<small>Randy Smith, customer since 2012</small>
+						</blockquote>
+						<hr class="separator">
+						<blockquote>
+							<p>"My family and I love to go kayaking. We always purchase from EarthJunky because I know that all the products that come from this store are safe and high-quality. I want to make sure that my kids are always using gear that I can trust. EarthJunky leaves me with no doubts."</p>
+							<small>John Williams, customer since 2010</small>
+						</blockquote>
+						<hr class="separator">
+						<blockquote>
+							<p>"I love the customer service at EarthJunky! I also have trouble deciding on what camping gear to purchase, but the associates at EarthJunky are always happy to talk through different products with me. I feel very comfortable with all the purhcases I make because of their insight. I will always come back to this company."</p>
+							<small>Mary Jones, customer since 2013</small>
+						</blockquote>
+						<hr class="separator">
+						<blockquote>
+							<p>"EarthJunky has everything that I need! There are very few days that I do not spend doing something outside. I am into all kinds of outdoor activities, such as camping, hiking, skiing, kayaking, snowboarding, and more. This store always has the right things that I need to enjoy the outdoors! I tell all my friends to come here."</p>
+							<small>Matt White, customer since 2014</small>
+						</blockquote>
+						<button class="btn btn-default btn-sm pull-right" role="button">More customer reviews &raquo;</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<h2 class="text-muted text-uppercase">News Blurb</h2>
+				<p class="text-muted">Click to read more!</p>
+				<div class="list-group">
+					<a class="list-group-item">
+						<span class="badge">1 day ago</span>
+						<h4 class="list-group-item-heading"><strong>EarthJunky Expansion</strong></h4>
+						<p class="list-group-item-text">EarthJunky is opening new stores! One of the locations will be in the Roanoke/Salem area in Virginia. The other location will be in the Blacksburg/Christiansburg area. Management believes that these regions can prove to be quite profitable due to the large amount of mountains and hiking trails around...</p>
+					</a>
+					<a class="list-group-item">
+						<span class="badge">3 days ago</span>
+						<h4 class="list-group-item-heading"><strong>CEO Retiring</strong></h4>
+						<p class="list-group-item-text">Our CEO, Jack Johnson, has made an announcement that he will be retiring at the end of the year. He has served the company for over 20 years in various positions. He began his tenure as CEO 8 years ago, and the company has been wildly successful during that time. We are sad to see him go, but we appreciate what he has done for the company...</p>
+					</a>
+					<a class="list-group-item">
+						<span class="badge">8 days ago</span>
+						<h4 class="list-group-item-heading"><strong>New Partnership</strong></h4>
+						<p class="list-group-item-text">EarthJunky has begun a brand new partnership with the NPO (National Parks Organization). We will be partnering with them to oversee the preservation of the national parks in the United States. Part of our mission in this partnership is to educate our customers on how to respect parks whenever they hike or camp there. We will begin many new initiatives and advertising campaigns as a part of this new partnership...</p>
+					</a>
+					<a class="list-group-item">
+						<span class="badge">2 weeks ago</span>
+						<h4 class="list-group-item-heading"><strong>New Product Line</strong></h4>
+						<p class="list-group-item-text">In the coming winter season, EarthJunky will be launching our very own line of winter clothes! This will be the first product line that EarthJunky produces in-house as opposed to selling various brands from different vendors. We are beginning this demand due to demands of customers, and we believe that we will exceed the expectations of our loyal customer base...</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar navbar-default">
+    	<p class="navbar-text">&copy;EarthJunky, 2015</p>
+  	</div>
+</body>
+</html>
